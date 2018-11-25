@@ -24,7 +24,7 @@ public abstract class Personne implements Input,Affichable
 	
 	public Personne()
 	{
-	 System.out.println("saisir le nom du "+ this.getClass().getSimpleName());  
+	/* System.out.println("saisir le nom du "+ this.getClass().getSimpleName());  
 	 // utile pour polymorphism if joueur ywali y'affichi  saisir le num de joueur
 	 Scanner sc = new Scanner(System.in);
 	 this.nomPersonne = sc.nextLine();
@@ -41,7 +41,7 @@ public abstract class Personne implements Input,Affichable
 	 
 	 System.out.println("saisir la nationalite du  "+ this.getClass().getSimpleName());
 	 this.nationalitePersonne= sc .nextLine();
-		
+		*/
 	}
 	
 	public void Afficher() // affichage  
