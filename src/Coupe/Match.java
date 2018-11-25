@@ -21,9 +21,14 @@ public class Match  implements Input
  { 
 	 saisie();
  }
- public Match(Equipe e1)
+ public Match(Equipe e1 , Equipe e2,int numTour)
  {
-	 
+
+	 numeroTour = numTour;
+	 equipe1= e1;
+	 equipe2 = e2;
+	 arbitreMatch = new Arbitre();
+	 resultat = generateResultat();
  }
  public void saisie()
  { 
@@ -38,10 +43,10 @@ public class Match  implements Input
 	 
  }
  
-private String generateResultat() 
+public String generateResultat() 
 {
 	Random r = new Random();
-	String[]  S = {"victoires", "defaites", "nulles"} ;
+	String[]  S = {"victoire ", "Defaite", "nulle"} ; // victoire indique victoire de l'equipe 1 sur 2  
 	  
 	return S[r.nextInt(3)]; // r.nextInt(3) renvoi un entier Random entre 0 et 2
 }

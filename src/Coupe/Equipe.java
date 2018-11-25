@@ -14,9 +14,9 @@ public class Equipe implements updatable,Affichable
  private Joueur[] joueurTitulaires;
  private Joueur[] remplacants;
  private Entraineur entraineur;
- 
+ private int F =0 ;
  		public Equipe() 
-	{ joueurTitulaires = new Joueur[11]; // temporary nbre de joueurs nda5louh entré par utilisateur ?
+	{ joueurTitulaires = new Joueur[F]; // temporary nbre de joueurs nda5louh entré par utilisateur ?
 	 saisie();
 	 
 	}
@@ -40,9 +40,9 @@ public class Equipe implements updatable,Affichable
 		Scanner sc = new Scanner(System.in);
 		nomEquipe = sc.nextLine();
 		
-		System.out.println("entrer les joueurs titulaire de l'equipe "); // nbre de joueurs titulaires =11
+	/*	System.out.println("entrer les joueurs titulaire de l'equipe "); // nbre de joueurs titulaires =11
    
-		for(int i=0;i<11;i++) 
+		for(int i=0;i<F;i++) 
    
 	{
 		joueurTitulaires[i]=new Joueur();   
@@ -62,9 +62,9 @@ public class Equipe implements updatable,Affichable
     {
 		remplacants[i]=new Joueur();   
 	}
-		System.out.println("entrer l'entraineur de l'equipe ");
+		/*System.out.println("entrer l'entraineur de l'equipe ");
     
-		entraineur= new Entraineur();
+		entraineur= new Entraineur();*/
 	
 	}
 	
